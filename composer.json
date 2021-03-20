@@ -16,8 +16,8 @@
     ],
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/FarisDevz/laravel-prefixed-ids"
+            "url": "https://github.com/FarisDevz/laravel-prefixed-ids.git",
+            "type": "git"
         }
     ],
     "require": {
