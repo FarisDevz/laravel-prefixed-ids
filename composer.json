@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-prefixed-ids",
+    "name": "farisdevz/laravel-prefixed-ids",
     "description": "Friendly prefixed IDs for Laravel models",
     "keywords": [
         "spatie",
