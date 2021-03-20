@@ -1,5 +1,5 @@
 {
-    "name": "farisdevz/laravel-prefixed-ids",
+    "name": "spatie/laravel-prefixed-ids",
     "description": "Friendly prefixed IDs for Laravel models",
     "keywords": [
         "spatie",
@@ -12,12 +12,6 @@
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "role": "Developer"
-        }
-    ],
-    "repositories": [
-        {
-            "url": "https://github.com/FarisDevz/laravel-prefixed-ids.git",
-            "type": "git"
         }
     ],
     "require": {
