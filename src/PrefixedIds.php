@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PrefixedIds
 {
-    static $registeredModels = [];
+    public static $registeredModels = [];
 
     public static function registerModels(array $registerModels): void
     {
@@ -56,5 +56,4 @@ class PrefixedIds
     {
         return 0 === strncmp($haystack, $needle, \strlen($needle));
     }
-
 }
