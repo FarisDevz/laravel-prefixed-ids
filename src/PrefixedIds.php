@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PrefixedIds
 {
-    public static array $registeredModels = [];
+    static $registeredModels = [];
 
     public static function registerModels(array $registerModels): void
     {
@@ -44,11 +44,17 @@ class PrefixedIds
     public static function getModelClass(string $prefixedId): ?string
     {
         foreach (static::$registeredModels as $prefix => $modelClass) {
-            if (str_starts_with($prefixedId, $prefix)) {
+            if (static::str_starts_with($prefixedId, $prefix)) {
                 return $modelClass;
             }
         }
 
         return null;
     }
+
+    public static function str_starts_with(string $haystack, string $needle): bool
+    {
+        return 0 === strncmp($haystack, $needle, \strlen($needle));
+    }
+
 }
